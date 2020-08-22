@@ -8,30 +8,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>calcular hipotenusa</title>
+  <title>Potencia</title>
     
   </head>
   <body>
 
     <div class="container">
-      <h1>calcular hipotenusa</h1>
+      <h1>Potencia</h1>
       
-      <form action="{{ route('formula.solucion') }}" method="post">
-        @csrf
-        <div class="form-group">
-            <label for="a">A</label>
-            <input class="form-control" type="number" name="a" id="a" placeholder="Ingresa A">
-        </div>
-        <div class="form-group">
-            <label for="b">B</label>
-            <input class="form-control" type="number" name="b" id="b" placeholder="Ingresa B">
-        </div>
+      
+        
+        <h4>Resultado: <span class="text-primary">{{ $resultado }}</span> </h4>
         
         
-        <button class="btn btn-primary">Calcular</button>
-      </form>
-
-
     </div>
     
 
